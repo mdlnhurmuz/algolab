@@ -78,7 +78,7 @@ void testcase() {
         adder.add_edge(i + 1, i + 2, v, e);
     }
 
-    // Option 2: Min Cost Max Flow with successive_shortest_path_nonnegative_weights  
+    // Min Cost Max Flow with successive_shortest_path_nonnegative_weights  
     boost::successive_shortest_path_nonnegative_weights(G, v_source, v_target);
     int cost2 = boost::find_flow_cost(G);
     // Iterate over all edges leaving the source to sum up the flow values.
