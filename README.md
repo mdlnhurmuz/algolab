@@ -9,7 +9,7 @@ Week 7
 Week 9
 1. Satellites - MinCut
 2. Algocoon - MinCost MaxFlow
-3. Canteen - MinCost MaxFlow with Nonnegative weights
-  Trick: Add large additive weight & compensate later.
+3. Canteen - MinCost MaxFlow with Nonnegative weights \
+  Trick: Add large additive weight & compensate later.\
   Obs: For n aprox 1000, use successive_shortest_path_nonnegative_weights, NOT cycle_canceling.
 4. Marathon - Keep the shortest paths from start to finish - Dijkstra using lengths of the edges. Apply flow on that graph - using the width as capacity [WIP].
