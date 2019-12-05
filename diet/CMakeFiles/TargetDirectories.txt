@@ -1,0 +1,3 @@
+/Users/madalinahurmuz/Documents/GitHub/algolab/diet/CMakeFiles/rebuild_cache.dir
+/Users/madalinahurmuz/Documents/GitHub/algolab/diet/CMakeFiles/edit_cache.dir
+/Users/madalinahurmuz/Documents/GitHub/algolab/diet/CMakeFiles/diet.dir
