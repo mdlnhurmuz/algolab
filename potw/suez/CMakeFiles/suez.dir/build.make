@@ -79,14 +79,7 @@ suez_EXTERNAL_OBJECTS =
 
 suez: CMakeFiles/suez.dir/suez.cpp.o
 suez: CMakeFiles/suez.dir/build.make
-suez: /usr/local/lib/libmpfr.dylib
-suez: /usr/local/lib/libgmp.dylib
-suez: /usr/local/lib/libCGAL_Core.13.0.3.dylib
-suez: /usr/local/lib/libboost_thread-mt.dylib
-suez: /usr/local/lib/libboost_system.dylib
 suez: /usr/local/lib/libCGAL.13.0.3.dylib
-suez: /usr/local/lib/libboost_thread-mt.dylib
-suez: /usr/local/lib/libboost_system.dylib
 suez: /usr/local/lib/libmpfr.dylib
 suez: /usr/local/lib/libgmp.dylib
 suez: /usr/local/lib/libboost_thread-mt.dylib
@@ -94,6 +87,7 @@ suez: /usr/local/lib/libboost_system-mt.dylib
 suez: /usr/local/lib/libboost_chrono-mt.dylib
 suez: /usr/local/lib/libboost_date_time-mt.dylib
 suez: /usr/local/lib/libboost_atomic-mt.dylib
+suez: /usr/local/lib/libboost_thread-mt.dylib
 suez: CMakeFiles/suez.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/madalinahurmuz/Documents/GitHub/algolab/potw/suez/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable suez"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/suez.dir/link.txt --verbose=$(VERBOSE)

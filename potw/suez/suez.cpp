@@ -23,14 +23,6 @@ double ceil_to_double(const CGAL::Quotient<ET>& x)
     return a;
 }   
 
-double floor_to_double(const CGAL::Quotient<ET>& x)
-{
-  double a = std::floor(CGAL::to_double(x));
-  while (a > x) a -= 1;
-  while (a+1 <= x) a += 1;
-  return a;
-} 
-
 void testcase() {
     double n, m, h, w;
     cin >> n >> m >> h >> w;
@@ -108,7 +100,6 @@ void testcase() {
     
     for (int i = 0; i < n; i++) {
         lp.set_c(i, - 2 * (w + h));
-        //lp.set_l(i, true, 1);
     }
 
     // solve the program, using ET as the exact type

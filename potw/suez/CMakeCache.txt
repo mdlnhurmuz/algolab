@@ -270,7 +270,7 @@ suez__SOURCE_DIR:STATIC=/Users/madalinahurmuz/Documents/GitHub/algolab/potw/suez
 Boost_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_DIR
 Boost_DIR-ADVANCED:INTERNAL=1
-CGAL_EXECUTABLE_TARGETS:INTERNAL=suez
+CGAL_EXECUTABLE_TARGETS:INTERNAL=suez;suez;suez;suez
 //Directory containing the GraphicsView package
 CGAL_GRAPHICSVIEW_PACKAGE_DIR:INTERNAL=/usr/local/include/CGAL/
 //Result of TRY_COMPILE

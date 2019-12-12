@@ -12,8 +12,8 @@ find_package(CGAL QUIET COMPONENTS Core )
 
 if ( CGAL_FOUND )
 
-  include( ${CGAL_USE_FILE} )
-  include( CGAL_CreateSingleSourceCGALProgram )
+  #include( ${CGAL_USE_FILE} )
+  #include( CGAL_CreateSingleSourceCGALProgram )
 
   create_single_source_cgal_program( "suez.cpp" )
 
@@ -23,4 +23,4 @@ else()
   
 endif()
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
