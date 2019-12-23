@@ -2,6 +2,14 @@
 
 You might find this of no use, but, for students at ETH, it might be interesting!
 
+Week 1
+1. Even Pairs - Number of pairs 0 <= i <= j < n such that sum xij is even. \
+  Steps: Keep partial sums. Compute the number of even sums and odd sums. \
+  Result: Comb(E, 2) + Comb(O, 2) + E.
+2. Build the Sum
+3. Dominoes - 2 pointers technique 
+4. Even Matrices - Compute partial sums on matrix + Even pairs combination
+
 Week 7
 1. Maximize it - Basic LP (max & min)
 2. Diet - Basic LP - Transform a real-world problem in a LP formulation 
@@ -20,8 +28,7 @@ Week 13
   Obs: Convert from a lower triangular matrix (see from (i, j) to one-dimensional mapping). \
   From weights in the nodes to weights on edges (directed graph). All nodes are connected to the balls around them (could be up to 6 neighbours). All the neighbours of a node, when they want to get in the node, they will pay the price of that node (its weight), so we put edges from the children to the node with the cost of the node. \
   Note: If 0 is a neighbour of 1, also 1 is a neighbour of 0. So, in a setting with three balls (one up and two down), we will have 6 edges.   \
-  Apply Dijkstra from all the three specials balls and sum up the values. The minimum value among those sums is the result. \
-
+  Apply Dijkstra from all the three specials balls and sum up the values. The minimum value among those sums is the result. 
 
 Potw \
 Week 9 - Suez - LP
