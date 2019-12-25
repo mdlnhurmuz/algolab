@@ -10,6 +10,52 @@ Week 1
 3. Dominoes - 2 pointers technique 
 4. Even Matrices - Compute partial sums on matrix + Even pairs combination
 
+Week 2
+
+Tutorial DP + Sliding window \ 
+Sliding window idea: \
+- Keep two pointers that keep track of the current interval (window) \
+- If the value of the window is too large: increase the left pointer \
+- If the value of the window is too small: increase the right pointer \ 
+Some problems in which you need to find some optimal interval can be solved in linear time using a similar sliding window approach. \
+
+1. Search Snippets
+2. Beach Bars
+3. Burning Coins
+4. The Great Game 
+
+Week 3
+
+Tutorial CGAL - 1
+1. CGAL::Exact_predicates_inexact_constructions_kernel "Epic"
+2. CGAL::Exact_predicates_exact_constructions_kernel "Epec"
+3. CGAL::Exact_predicates_exact_constructions_kernel_with_sqrt "Epecsqrt" (e.g. CGAL::sqrt)
+
+Fast to slow: Epic -> Epec -> Epecsqrt \
+Guideline #1: Avoid (square) roots! \
+For x, y >= 0: sqrt(x) < sqrt(y) <=> x < y. \
+Guideline #2: Avoid divisions! \
+For b,d > 0: a/b < c/d <=> ad < bc. \
+
+Obs: Use two kernels in one problem: inexact kernel for predicates only (e.g. CGAL::left_turn) and the exact kernel for the non-trivial constructions (e.g. circle.has_on_boundary(point)). \
+
+
+Steps to run with CGAL \ 
+1.Run cgal_create_cmake_script 
+2.Add 
+ include( ${CGAL_USE_FILE} ) \
+ include( CGAL_CreateSingleSourceCGALProgram ) \
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11") \
+3. cmake .
+4. make && ./hello-exact
+
+
+1. Hit
+  For checking the existence of possible intersections, use CGAL::orientation and CGAL::do_intersect. If we have a ray with a start point S and a direction D and a line segment with two points X and Y, we compute orientation for (S, D, X) and (S, D, Y) and if these two values are negative, it means that X and Y are on different parts of the ray, so it might be a chance of intersection and we can call do_intersect. \ 
+2. First hit
+3. Antenna
+4. Almost Antenna
+
 Week 7
 1. Maximize it - Basic LP (max & min)
 2. Diet - Basic LP - Transform a real-world problem in a LP formulation 
@@ -38,3 +84,6 @@ DP problems
 1. Coin change
 2. Longest increasing subsequence
 3. Subset Sum
+4. Knapsack TODO
+5. Longest common subsequence TODO
+6. Edit distance TODO
