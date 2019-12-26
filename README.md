@@ -41,18 +41,24 @@ Obs: Use two kernels in one problem: inexact kernel for predicates only (e.g. CG
 
 
 Steps to run with CGAL \ 
-1.Run cgal_create_cmake_script 
-2.Add 
+1. Run cgal_create_cmake_script 
+2. Add 
  include( ${CGAL_USE_FILE} ) \
  include( CGAL_CreateSingleSourceCGALProgram ) \
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11") \
-3. cmake .
+3. cmake . <br>
 4. make && ./hello-exact
 
 
-1. Hit
+1. Hit <br>
   For checking the existence of possible intersections, use CGAL::orientation and CGAL::do_intersect. If we have a ray with a start point S and a direction D and a line segment with two points X and Y, we compute orientation for (S, D, X) and (S, D, Y) and if these two values are negative, it means that X and Y are on different parts of the ray, so it might be a chance of intersection and we can call do_intersect. \ 
-2. First hit
+2. First hit <br>
+- We do not need roots, but we construct intersection points. Therefore, using EPEC makes sense. <br>
+- Input number are up to 51 bits => LONG <br>
+- Implementation idea: <br>
+  - Use clipping (from ray to segment) <br>
+  - Clip the ray at each segment hit (cuts down on the number of intersection points to be constructed) <br>
+  - Use random shuffle on the segments for a uniformly random permutation of an n element set <br>
 3. Antenna
 4. Almost Antenna
 
