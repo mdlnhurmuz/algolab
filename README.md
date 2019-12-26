@@ -12,12 +12,12 @@ Week 1
 
 Week 2
 
-Tutorial DP + Sliding window \ 
-Sliding window idea: \
-- Keep two pointers that keep track of the current interval (window) \
-- If the value of the window is too large: increase the left pointer \
-- If the value of the window is too small: increase the right pointer \ 
-Some problems in which you need to find some optimal interval can be solved in linear time using a similar sliding window approach. \
+Tutorial DP + Sliding window <br>
+Sliding window idea: 
+- Keep two pointers that keep track of the current interval (window) 
+- If the value of the window is too large: increase the left pointer 
+- If the value of the window is too small: increase the right pointer 
+Some problems in which you need to find some optimal interval can be solved in linear time using a similar sliding window approach. 
 
 1. Search Snippets
 2. Beach Bars
@@ -26,18 +26,18 @@ Some problems in which you need to find some optimal interval can be solved in l
 
 Week 3
 
-Tutorial CGAL - 1
+Tutorial CGAL (1)
 1. CGAL::Exact_predicates_inexact_constructions_kernel "Epic"
 2. CGAL::Exact_predicates_exact_constructions_kernel "Epec"
 3. CGAL::Exact_predicates_exact_constructions_kernel_with_sqrt "Epecsqrt" (e.g. CGAL::sqrt)
 
-Fast to slow: Epic -> Epec -> Epecsqrt \
-Guideline #1: Avoid (square) roots! \
-For x, y >= 0: sqrt(x) < sqrt(y) <=> x < y. \
-Guideline #2: Avoid divisions! \
-For b,d > 0: a/b < c/d <=> ad < bc. \
+Fast to slow: Epic -> Epec -> Epecsqrt 
+Guideline #1: Avoid (square) roots! 
+For x, y >= 0: sqrt(x) < sqrt(y) <=> x < y. 
+Guideline #2: Avoid divisions! 
+For b,d > 0: a/b < c/d <=> ad < bc. 
 
-Obs: Use two kernels in one problem: inexact kernel for predicates only (e.g. CGAL::left_turn) and the exact kernel for the non-trivial constructions (e.g. circle.has_on_boundary(point)). \
+Obs: Use two kernels in one problem: inexact kernel for predicates only (e.g. CGAL::left_turn) and the exact kernel for the non-trivial constructions (e.g. circle.has_on_boundary(point)). 
 
 
 Steps to run with CGAL \ 
