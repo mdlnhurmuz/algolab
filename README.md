@@ -58,8 +58,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
   - Use clipping (from ray to segment) <br>
   - Clip the ray at each segment hit (cuts down on the number of intersection points to be constructed) <br>
   - Use random shuffle on the segments for a uniformly random permutation of an n element set <br>
-3. **Antenna**
-4. **Almost Antenna**
+3. **Antenna** - Min circle & Find roots (EPECSQRT)
+4. **Almost Antenna** - Min circle & Try erasing one point to find minimum radius (EPECSQRT)
 
 ### Week 7
 1. **Maximize it** - Basic LP (max & min)
