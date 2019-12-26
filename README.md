@@ -45,6 +45,7 @@ Steps to run with CGAL <br>
 - Add 
  include( ${CGAL_USE_FILE} ) \
  include( CGAL_CreateSingleSourceCGALProgram ) \
+ create_single_source_cgal_program( "first_hit.cpp" ) \
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11") 
 - cmake . <br>
 - make && ./hello-exact
