@@ -61,6 +61,25 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 3. **Antenna** - Min circle & Find roots (EPECSQRT)
 4. **Almost Antenna** - Min circle & Try erasing one point to find minimum radius (EPECSQRT)
 
+### Week 4
+
+Tutorial BGL (1)
+BGL outlook:
+- *breadth_first_search*
+- strongly connected components in directed graphs (*strong_components*)
+- connected components in undirected graphs (*connected_components*)
+- *is_bipartite*
+- minimum spanning tree (*kruskal_minimum_spanning_tree*, *prim_minimum_spanning_tree*)
+
+1. **First steps with BGL** - Kruskal & Dijkstra 
+2. **Ant Challenge** - 60 points: Run Prim for every species to establish its network & Dijkstra from source to destination on the smallest weight given all the possible ones from the established networks 
+3. **Buddy Selection** <br>
+- Set intersection (sort and 2 pointers to keep track of common elements)
+- If the number of common elements > 1, then we have an edge
+- We have a maximum matching problem <=> bipartite graph - flow formulation through vertex capacities
+- The graph has n * 2 + 2 nodes. Put an edge of capacity 1 from source, to the first n nodes and same for target and last n nodes. Add an edge of capacity 1, between the 2 rounds of nodes, if they share more than f characteristics. 
+4. **Shortest Paths** - Dijkstra 
+
 ### Week 7
 1. **Maximize it** - Basic LP (max & min)
 2. **Diet** - Basic LP - Transform a real-world problem in a LP formulation 
