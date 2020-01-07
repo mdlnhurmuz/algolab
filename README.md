@@ -91,11 +91,10 @@ BGL outlook:
  - vertex capacities - split in-vertexes and out-vertexes and put an edge of capacity 1 from in-vertexes to out-vertexes
  - undirected graphs - undirected edge (v, w) with capacity 4 will become directed edge (v, w) with capacity 4 and directed edge (w, v) with capacity 4
  - edge with constraints 
- <br>
- Lemma (Flow Decomposition): In a directed graph with unit capacities, the maximum number of edge disjoint s-t-paths is equal to the maximum flow ,from s to t. 
-<br>
-Circulation problem - solving with max-flow
-<br>
+ 
+ Notes:
+- Lemma (Flow Decomposition): In a directed graph with unit capacities, the maximum number of edge disjoint s-t-paths is equal to the maximum flow ,from s to t. 
+- Circulation problem - solving with max-flow 
 
 1. **Coin tossing** - Max flow
 2. **Shopping trip** - Max flow - Every store linked with the target. 
