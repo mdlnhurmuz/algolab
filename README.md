@@ -105,8 +105,22 @@ Obs:
 4. **London** - Max flow with constraints on edges
 
 ### Week 7
+
+Tutorial Linear Programming (LP)
+Obs:
+- Minimization - f = Maximizing f 
+- Apply LP - a problem can be modeled using n variables and m constraints s.t.:
+  - constraints are linear (in)equalities in the variables
+  - at least one of n or m in small (max 200)
+
+
 1. **Maximize it** - Basic LP (max & min)
 2. **Diet** - Basic LP - Transform a real-world problem in a LP formulation 
+3. **Inball** - Read solution. Asking for maximum integral radius of a d dimensional ball that fits in a cave described by linear inequalities. <br>
+Obs:
+- lp.set_c (objective function)
+- lp.set_a and lp.set_b for the (in)equalities
+- s.objective_value().numerator() and .denominator()
 
 ### Week 9
 1. **Satellites** - MinCut
