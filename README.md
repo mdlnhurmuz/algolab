@@ -80,6 +80,31 @@ BGL outlook:
 - The graph has n * 2 + 2 nodes. Put an edge of capacity 1 from source, to the first n nodes and same for target and last n nodes. Add an edge of capacity 1, between the 2 rounds of nodes, if they share more than f characteristics. 
 4. **Shortest Paths** - Dijkstra 
 
+### Week 6
+ 
+ Tutorial BGL (2)
+ Maximum flows:
+ - *push_relabel_max_flow* - almost always
+ - *edmonds_karp_max_flow* - almost never
+ Common techniques:
+ - multiple sources/sinks - edges with infinite capacity from the source and to the target
+ - vertex capacities - split in-vertexes and out-vertexes and put an edge of capacity 1 from in-vertexes to out-vertexes
+ - undirected graphs - undirected edge (v, w) with capacity 4 will become directed edge (v, w) with capacity 4 and directed edge (w, v) with capacity 4
+ - edge with constraints 
+ <br>
+ Lemma (Flow Decomposition): In a directed graph with unit capacities, the maximum number of edge disjoint s-t-paths is equal to the maximum flow ,from s to t. 
+<br>
+Circulation problem - solving with max-flow
+<br>
+
+1. **Coin tossing** - Max flow
+2. **Shopping trip** - Max flow - Every store linked with the target. 
+3. **Tetris** - Vertex capacities of 1 and edge capacities of 1 <br>
+Obs:
+- "Left end does not necessarily come first"
+- Attention there might be nodes from 0 to w, from v_source to v_target directly.
+4. **London** - Max flow with constraints on edges
+
 ### Week 7
 1. **Maximize it** - Basic LP (max & min)
 2. **Diet** - Basic LP - Transform a real-world problem in a LP formulation 
