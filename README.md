@@ -80,6 +80,14 @@ BGL outlook:
 - The graph has n * 2 + 2 nodes. Put an edge of capacity 1 from source, to the first n nodes and same for target and last n nodes. Add an edge of capacity 1, between the 2 rounds of nodes, if they share more than f characteristics. 
 4. **Shortest Paths** - Dijkstra 
 
+### Week 5
+
+1. **Planks** - 60 points solution. Backtracking to find a combination of numbers that sum up to K. Do this 4 times, to see whether we can find 4 different sets so that each represents a side. Attention to return statements. 
+2. **Boats**
+3. **Octopussy**
+4. **Punch**
+5. **Light at the Museum**
+
 ### Week 6
  
  Tutorial BGL (2)
