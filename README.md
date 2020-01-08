@@ -82,14 +82,6 @@ BGL outlook:
 
 ### Week 5
 
-1. **Planks** - 60 points solution. Backtracking to find a combination of numbers that sum up to K. Do this 4 times, to see whether we can find 4 different sets so that each represents a side. Attention to return statements. 
-2. **Boats**
-3. **Octopussy**
-4. **Punch**
-5. **Light at the Museum**
-
-### Week 6
-
 Greedy algorithms:
 - Knapsack variations (fractional knapsack & equal weights knapsack):
   - sort items decreasingly according to value vi/ weight wi
@@ -97,6 +89,21 @@ Greedy algorithms:
 - Interval Scheduling 
   - sort the jobs according to increasing finish time
   - for each interval [si, fi], add the job if si is greater than the finish time of the last job that was added 
+
+1. **Planks** - 60 points solution. Backtracking to find a combination of numbers that sum up to K. Do this 4 times, to see whether we can find 4 different sets so that each represents a side. Attention to return statements. 
+2. **Boats** 
+Steps:
+- Keep 2 right pointers (last_prev=-INT_MAX, last=v[0].second)
+- Iterate from second point until the last point, by computing and checking: 
+  - Compute new right pointers for both of them (e.g. last=max(last+length-i, position-i))
+  - If the global right pointer last <= position-i, it means we can add a new boat:
+      - update last_prev, last and increase the number of boats
+   - Otherwise, update last_prev and last with the minimum corresponding values. Here, we think of the case where we keep the same number of boats, but with having the smallest right pointer.
+3. **Octopussy**
+4. **Punch**
+5. **Light at the Museum**
+
+### Week 6
  
  Tutorial BGL (2)
  Maximum flows:
