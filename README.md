@@ -89,6 +89,14 @@ BGL outlook:
 5. **Light at the Museum**
 
 ### Week 6
+
+Greedy algorithms:
+- Knapsack variations (fractional knapsack & equal weights knapsack):
+  - sort items decreasingly according to value vi/ weight wi
+  - choose items in that order until knapsack is full 
+- Interval Scheduling 
+  - sort the jobs according to increasing finish time
+  - for each interval [si, fi], add the job if si is greater than the finish time of the last job that was added 
  
  Tutorial BGL (2)
  Maximum flows:
