@@ -187,7 +187,8 @@ Obs:
   Apply Dijkstra from all the three specials balls and sum up the values. The minimum value among those sums is the result. 
 
 ### Potw 
-Week 9 - **Suez** - LP
+Week 9 - **Suez** - LP \
+Week 10 - **GoldenEye** - Triangulation & Disjoint sets (check comments in source file)
 
 ### Extra exercises 
 DP problems
