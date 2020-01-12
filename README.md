@@ -145,6 +145,31 @@ Obs:
 - lp.set_a and lp.set_b for the (in)equalities
 - s.objective_value().numerator() and .denominator()
 
+### Weak 8
+
+1. **Graypes**
+Obs:
+- The 2 endpoints of a segment are source() and target()
+- Compute min squared distance among all endpoints of the segments in the triangulation
+- Compute sqrt of the min squared distance * multiply by 50 (sqrt(min_squared_distance) / 2 / 0.01 = sqrt(min_squared_distance) * 50)
+- 1 hundreth of a second = 0.01 seconds 
+2. **Bistro** 
+Obs:
+- For every q point in M points read, give the closest point from P (a set of n points in the triangulation).
+- Use t.nearest_vertex(), which often is much more efficient than computing the Voronoi diagram <br>
+e.g. <br>
+K::Point_2 q(x, y); <br>
+auto handle = t.nearest_vertex(q); <br>
+auto distance = squared_distance(handle->point(), q); <br>
+- For fixed precision: std::cout.precision(0) && std::cout << fixed;
+3. **Germs**
+4. **H1N1** 
+Obs: 
+- Read more here https://github.com/X-Wei/ETH-Algolab-FS2015/blob/master/algolab_doc/exam-preparation-h1n1-firsthit.pdf or here https://github.com/NorfairKing/eth-algolab-2015/blob/master/src/h1n1/main.cc 
+- How to move a disk D without colliding with a given point set P?
+- Locate triangle t where we are; is it safe to be there?
+- Which of the tree neighboring triangles can we move to? - DFS on the Voronoi/Delauney
+
 ### Week 9
 1. **Satellites** - MinCut
 2. **Algocoon** - MinCost MaxFlow

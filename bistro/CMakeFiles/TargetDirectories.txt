@@ -1,0 +1,3 @@
+/Users/madalinahurmuz/Documents/GitHub/algolab/bistro/CMakeFiles/rebuild_cache.dir
+/Users/madalinahurmuz/Documents/GitHub/algolab/bistro/CMakeFiles/edit_cache.dir
+/Users/madalinahurmuz/Documents/GitHub/algolab/bistro/CMakeFiles/bistro.dir
