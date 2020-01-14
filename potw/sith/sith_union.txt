@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int q(vector<int>& t, int x) {
+    int R, y;
+    for (R=x;R!=t[R];R=t[R]);
+    for (;x!=R;y=t[x],t[x]=R,x=y);
+    return R;
+}
+
+int main() {
+    int t; cin >> t;
+    while (t--) {
+        int n; long long r;
+        cin >> n >> r;
+        vector<pair<int,int>> v(n);
+        for (int i = 0; i < n; i++) {
+            cin >> v[i].first >> v[i].second;
+        }
+        vector<int> t(n), a(n);
+        for (int i = 0; i < n; i++) {
+            t[i] = i;
+            a[i] = 1;
+        }
+        for (int i = n-1; i >= 0; i--) {
+            for (int j = i+1; j < n; j++) {
+                long long dx = v[i].first-v[j].first;
+                long long dy = v[i].second-v[j].second;
+                long long dist = dx * dx + dy * dy;
+                int qi = q(t, i);
+                int qj = q(t, j);
+                if (dist <= r * r && qi != qj) {
+                    a[qi] += a[qj];
+                    t[qj] = qi;
+                }
+            }
+            int mx = 0;
+            for (int j = i; j < n; j++) {
+                mx = max(mx, a[q(t,i)]);
+            }
+            if (i <= mx) {
+                cout << i << '\n';
+                break;
+            }
+        }
+    }
+
+    return 0;
+}
