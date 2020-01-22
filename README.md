@@ -102,6 +102,13 @@ Steps:
 3. **Octopussy**
 4. **Punch**
 5. **Light at the Museum**
+M = 1 case: We can't do 2^30, so we can do 2^15 twice. 
+Obs:
+- Use iteration through bits:
+  - 0 0
+  - 0 1
+  - 1 0
+  - 1 1 etc
 
 ### Week 6
  
