@@ -193,7 +193,8 @@ Obs:
 4. **Defensive Line** - 60 points 
 
 ### Week 12
-1. **Tour of Gaul** - MinCost MaxFlow with additive weight & other tricks - Difficult!!!
+1. **Magician and Coin** - DP & memoization
+2. **Tour of Gaul** - MinCost MaxFlow with additive weight & other tricks - Difficult!!!
 
 
 ### Week 13
