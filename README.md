@@ -186,6 +186,16 @@ Obs:
 4. **Marathon** - Keep the shortest paths from start to finish - Dijkstra using lengths of the edges. Apply flow on that graph - using the width as capacity. \
   Obs: When adding edges (e.g. (x,y)) into a graph for flow, make checks so that the edge is added into the correct way (direction matters - add x connected to the source if the distance from the source is smaller than y's, else add y connected near the source and x to the finish node).
 
+### Week 10
+1. **Return of the Jedi** - Kruskal with union-find & bfs & trick
+2. **Light at the stage**
+3. **Moving books**
+4. **Defensive Line** - 60 points 
+
+### Week 12
+1. **Tour of Gaul** - MinCost MaxFlow with additive weight & other tricks - Difficult!!!
+
+
 ### Week 13
 1. **Bob's Burden** - Shortest Paths (Dijkstra) \
   Obs: Convert from a lower triangular matrix (see from (i, j) to one-dimensional mapping). \
@@ -205,3 +215,13 @@ DP problems
 4. **Knapsack** TODO
 5. **Longest common subsequence** TODO
 6. **Edit distance** TODO
+
+### Exam day 1
+1. **Iron** 
+- Basic idea: sum in a vector that sum K with maximum length
+- Do this iteration in linear time
+- Use a map to keep every partial sum that you saw:
+  e.g. m[0] = -1; // We have sum 0 at position -1
+- To find something in a map: m.find(x) != m.end() 
+
+
