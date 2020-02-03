@@ -201,6 +201,7 @@ Obs:
 ### Week 12
 1. **Magician and Coin** - DP & memoization
 2. **Tour of Gaul** - MinCost MaxFlow with additive weight & other tricks - Difficult!!!
+3. **Clues** - 60 points - Triangulation with union find and nearest vertex
 
 
 ### Week 13
