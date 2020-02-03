@@ -192,6 +192,12 @@ Obs:
 3. **Moving books**
 4. **Defensive Line** - 60 points 
 
+### Week 11
+1. **The Empire Strickes Back**
+2. **Evolution**
+3. **Surveillance Photographs**
+4. **DHL** - DP & Memoization (50 points)
+
 ### Week 12
 1. **Magician and Coin** - DP & memoization
 2. **Tour of Gaul** - MinCost MaxFlow with additive weight & other tricks - Difficult!!!
