@@ -1,0 +1,3 @@
+/Users/madalinahurmuz/Documents/GitHub/algolab/potw/sith/CMakeFiles/rebuild_cache.dir
+/Users/madalinahurmuz/Documents/GitHub/algolab/potw/sith/CMakeFiles/edit_cache.dir
+/Users/madalinahurmuz/Documents/GitHub/algolab/potw/sith/CMakeFiles/sith.dir
