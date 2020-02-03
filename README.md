@@ -213,7 +213,7 @@ Obs:
 ### Potw 
 Week 9 - **Suez** - LP \
 Week 10 - **GoldenEye** - Triangulation & Disjoint sets (check comments in source file) \
-Week 11 - **India** - MinCost MaxFlow where you have to play around with the flow (max flow that can achieve a cost <= budget) - Use binary search
+Week 11 - **India** - MinCost MaxFlow where you have to play around with the flow (max flow that can achieve a cost <= budget) - Use binary search \
 Week 14 - **Car Sharing** - MinCost MaxFlow - Multiply the stations for each timestep in time + Additive weight 
 
 ### Extra exercises 
