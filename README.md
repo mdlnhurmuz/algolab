@@ -194,7 +194,7 @@ Obs:
 
 ### Week 11
 1. **The Empire Strickes Back**
-2. **Evolution**
+2. **Evolution** - DFS & Keep parents & Binary search for the full 100 points
 3. **Surveillance Photographs** - MaxFlow - Really interesting network!
 4. **DHL** - DP & Memoization (50 points)
 
@@ -212,7 +212,7 @@ Obs:
   Apply Dijkstra from all the three specials balls and sum up the values. The minimum value among those sums is the result. 
 
 ### Potw 
-Week 8 - **Cantonal Courier** \
+Week 8 - **Cantonal Courier** 
   - We have to find the max profit taking into account that we can buy tickets and we have rewards for jobs. Each job require a set of tickets or no tickets at all.    
   - Solving the cut (lost money )= sum of bought tickets (ON THE LEFT SIDE - YES - WE TAKE THE TICKETS) + sum of jobs UNresolved (ON THE RIGHT SIDE - NO - WE DO NOT TAKE THE REWARDS)  
   - I want to maxim [sum of all rewards - the lost money] => Want the min[lost money] => Want min[cut value] = MaxFlow. 
