@@ -212,6 +212,11 @@ Obs:
   Apply Dijkstra from all the three specials balls and sum up the values. The minimum value among those sums is the result. 
 
 ### Potw 
+Week 8 - **Cantonal Courier** \
+  - We have to find the max profit taking into account that we can buy tickets and we have rewards for jobs. Each job require a set of tickets or no tickets at all.    
+  - Solving the cut (lost money )= sum of bought tickets (ON THE LEFT SIDE - YES - WE TAKE THE TICKETS) + sum of jobs UNresolved (ON THE RIGHT SIDE - NO - WE DO NOT TAKE THE REWARDS)  
+  - I want to maxim [sum of all rewards - the lost money] => Want the min[lost money] => Want min[cut value] = MaxFlow. 
+
 Week 9 - **Suez** - LP \
 Week 10 - **GoldenEye** - Triangulation & Disjoint sets (check comments in source file) \
 Week 11 - **India** - MinCost MaxFlow where you have to play around with the flow (max flow that can achieve a cost <= budget) - Use binary search \
