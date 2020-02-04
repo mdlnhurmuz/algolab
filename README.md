@@ -115,7 +115,7 @@ Obs:
  Tutorial BGL (2)
  Maximum flows:
  - *push_relabel_max_flow* - almost always
- - *edmonds_karp_max_flow* - almost never
+ - *edmonds_karp_max_flow* - almost never \
  Common techniques:
  - multiple sources/sinks - edges with infinite capacity from the source and to the target
  - vertex capacities - split in-vertexes and out-vertexes and put an edge of capacity 1 from in-vertexes to out-vertexes
@@ -210,6 +210,7 @@ Obs:
   From weights in the nodes to weights on edges (directed graph). All nodes are connected to the balls around them (could be up to 6 neighbours). All the neighbours of a node, when they want to get in the node, they will pay the price of that node (its weight), so we put edges from the children to the node with the cost of the node. \
   Note: If 0 is a neighbour of 1, also 1 is a neighbour of 0. So, in a setting with three balls (one up and two down), we will have 6 edges.   \
   Apply Dijkstra from all the three specials balls and sum up the values. The minimum value among those sums is the result. 
+2. **Corbusier** - Split & List - Subset sum for 60 points
 
 ### Potw 
 Week 8 - **Cantonal Courier** 
