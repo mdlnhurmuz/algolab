@@ -195,7 +195,7 @@ Obs:
 ### Week 11
 1. **The Empire Strickes Back**
 2. **Evolution**
-3. **Surveillance Photographs**
+3. **Surveillance Photographs** - MaxFlow - Really interesting network!
 4. **DHL** - DP & Memoization (50 points)
 
 ### Week 12
